@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars and Moon | Travelling Cost</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: url(crew.jpg), no-repeat;
+        }
+
+        .opacity {
+            opacity: 0.85;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="w-50 mx-auto opacity">
+            <div class="p-5">
+                <h1>Welcome to TravelX</h1>
+                <div class="mt-5">
+                    <p>Journey to mars</p>
+                    <input id="mars" class="w-100" type="number" value="0">
+                    <div class="d-flex justify-content-between mt-2">
+                        <div>
+                            <button onclick="incriment('mars','mars-cost')" type="button"
+                                class="btn btn-primary">+</button>
+                            <button onclick="dicrement('mars','mars-cost')" type="button"
+                                class="btn btn-primary">-</button>
+                        </div>
+                        <h4>Cost: $<span id="mars-cost">0</span></h4>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <p>Journey to moon</p>
+                    <input id="moon" class="w-100" type="number" value="0">
+                    <div class="d-flex justify-content-between mt-2">
+                        <div>
+                            <button onclick="incriment('moon','moon-cost')" type="button"
+                                class="btn btn-primary">+</button>
+                            <button onclick="dicrement('moon','moon-cost')" type="button"
+                                class="btn btn-primary">-</button>
+                        </div>
+                        <h4>Cost: $<span id="moon-cost">0</span></h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-end align-items-center">
+                    <h3>Total Cost: $<span id="total-cost">0</span></h3>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
